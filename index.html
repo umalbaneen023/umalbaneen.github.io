@@ -4,59 +4,132 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Umal Baneen | WordPress Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9fafc;
     color: #333;
 }
-header {
-    background: #111827;
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb, #06b6d4);
     color: white;
-    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 20px;
 }
-header h1 {
-    font-size: 40px;
-    margin: 0;
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
 }
-header p {
-    font-size: 18px;
-    margin-top: 10px;
+
+.hero p {
+    margin-top: 15px;
+    font-size: 20px;
+    max-width: 700px;
 }
+
+.btn {
+    margin-top: 30px;
+    padding: 14px 30px;
+    background: white;
+    color: #1e3a8a;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e2e8f0;
+}
+
+/* SECTIONS */
 section {
-    padding: 60px 20px;
-    max-width: 1000px;
-    margin: auto;
+    padding: 80px 10%;
 }
-h2 {
+
+.section-title {
     text-align: center;
-    margin-bottom: 30px;
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-weight: 700;
 }
-.services, .projects {
+
+/* SERVICES */
+.services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
 }
+
 .card {
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
 }
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
 .card h3 {
-    margin-top: 0;
+    margin-bottom: 15px;
 }
-.btn {
+
+/* PROJECTS */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card a {
     display: inline-block;
-    padding: 12px 25px;
-    background: #2563eb;
-    color: white;
+    margin-top: 10px;
     text-decoration: none;
-    border-radius: 6px;
-    margin-top: 20px;
+    color: #2563eb;
+    font-weight: 600;
 }
+
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+
 footer {
     text-align: center;
     padding: 30px;
@@ -68,70 +141,79 @@ footer {
 
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
     <h1>Hi, I'm Umal Baneen 👋</h1>
-    <p>Software Engineer & WordPress Developer</p>
-    <p>I build high-performance, SEO-optimized WordPress & Shopify websites.</p>
-    <a href="mailto:umalbaneen023@gmail.com" class="btn">Hire Me</a>
-</header>
+    <p>Software Engineer & WordPress Developer specialized in custom WordPress, Shopify, API integrations & high-performance websites.</p>
+    <a href="#contact" class="btn">Let's Work Together</a>
+</div>
 
+<!-- ABOUT -->
 <section>
-    <h2>About Me</h2>
-    <p>
-        I am a Software Engineer with 4+ years of experience in WordPress development,
-        plugin customization, API integrations, and website speed optimization.
-        I help businesses build scalable, secure, and high-performing websites.
+    <h2 class="section-title">About Me</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        I am a WordPress Developer with 4+ years of experience building scalable,
+        secure, and SEO-optimized websites. I specialize in custom themes,
+        plugin development, speed optimization (90–95+ scores), and CRM/API integrations
+        including HubSpot & Zoho.
     </p>
 </section>
 
+<!-- SERVICES -->
 <section>
-    <h2>My Services</h2>
+    <h2 class="section-title">Services</h2>
     <div class="services">
         <div class="card">
             <h3>WordPress Development</h3>
-            <p>Custom themes, plugins, WooCommerce & full website builds.</p>
+            <p>Custom themes, plugins, WooCommerce & full website development.</p>
         </div>
         <div class="card">
             <h3>Shopify Development</h3>
-            <p>Custom Shopify stores with product & payment integration.</p>
+            <p>Modern Shopify stores with payment & product integration.</p>
         </div>
         <div class="card">
             <h3>Speed Optimization</h3>
-            <p>Improve speed scores to 90–95+ & optimize Core Web Vitals.</p>
+            <p>Improve Core Web Vitals & achieve 90–95+ performance score.</p>
         </div>
         <div class="card">
-            <h3>API Integration</h3>
-            <p>HubSpot, Zoho, payment gateways & third-party APIs.</p>
+            <h3>API & CRM Integration</h3>
+            <p>HubSpot, Zoho, Stripe, PayPal & third-party REST APIs.</p>
         </div>
     </div>
 </section>
 
+<!-- PROJECTS -->
 <section>
-    <h2>Featured Projects</h2>
+    <h2 class="section-title">Featured Projects</h2>
     <div class="projects">
-        <div class="card">
+
+        <div class="project-card">
             <h3>Personal Drivers</h3>
-            <p>High-performance service website optimized for SEO & speed.</p>
-            <a href="https://www.personaldrivers.com/" target="_blank">View Project</a>
+            <p>High-performance service website optimized for speed & SEO.</p>
+            <a href="https://www.personaldrivers.com/" target="_blank">View Project →</a>
         </div>
-        <div class="card">
+
+        <div class="project-card">
             <h3>Best Biz Tech</h3>
             <p>Corporate website with custom WordPress development.</p>
-            <a href="https://www.bestbiztech.com/" target="_blank">View Project</a>
+            <a href="https://www.bestbiztech.com/" target="_blank">View Project →</a>
         </div>
-        <div class="card">
+
+        <div class="project-card">
             <h3>Leaf Gutter Solution</h3>
-            <p>Business website with SEO and responsive layout.</p>
-            <a href="https://leafguttersolution.com" target="_blank">View Project</a>
+            <p>Business website with responsive layout & SEO setup.</p>
+            <a href="https://leafguttersolution.com" target="_blank">View Project →</a>
         </div>
+
     </div>
 </section>
 
-<section>
-    <h2>Contact</h2>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
     <p>Email: umalbaneen023@gmail.com</p>
     <p>Location: Lahore, Pakistan</p>
-    <p>Available for freelance projects & remote work.</p>
+    <p><strong>Available for freelance & remote projects.</strong></p>
 </section>
 
 <footer>
