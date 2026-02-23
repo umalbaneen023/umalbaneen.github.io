@@ -14,9 +14,10 @@
 <!-- STYLES -->
 
 <style>
-        /* =========================
-   RESPONSIVE BREAKPOINTS
-========================= */
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 /* Large tablets & small laptops */
 @media (max-width: 1024px) {
@@ -55,8 +56,8 @@
 @media (max-width: 768px) {
     /* HERO */
     .hero {
-        height: auto;
-        padding: 100px 6% 80px;
+        height: auto !important;
+        padding: 100px 6% 80px !important;
     }
 
     .hero h1 {
@@ -67,16 +68,20 @@
         font-size: 16px;
     }
 
+    @media (max-width: 768px) {
     .hero-actions {
         flex-direction: column;
+        gap: 14px;
         width: 100%;
         max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-actions a {
         width: 100%;
-        text-align: center;
     }
+}
 
     /* GLOBAL */
     section {
