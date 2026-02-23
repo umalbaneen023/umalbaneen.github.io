@@ -12,6 +12,140 @@
 <meta name="description" content="Umal Baneen – Software Engineer & WordPress Developer specializing in high-performance, scalable, and SEO-optimized websites.">
 
 <!-- STYLES -->
+    /* =========================
+   RESPONSIVE BREAKPOINTS
+========================= */
+
+/* Large tablets & small laptops */
+@media (max-width: 1024px) {
+    section {
+        padding: 80px 8%;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    /* HERO */
+    .hero {
+        height: auto;
+        padding: 100px 6% 80px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .hero-actions a {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* GLOBAL */
+    section {
+        padding: 60px 6%;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    /* STATS */
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* SERVICES */
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    /* PROJECTS */
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project-content {
+        padding: 20px;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding: 80px 6%;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+    .contact a {
+        display: block;
+        margin: 10px auto;
+        max-width: 260px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .hero-avatar {
+        width: 110px;
+        height: 110px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    footer {
+        font-size: 13px;
+        padding: 20px;
+    }
+}
 <style>
     .view-more-wrapper {
     text-align: center;
