@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Umal Baneen</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<meta name="description" content="Portfolio projects by Umal Baneen – WordPress Developer specializing in high-performance, SEO-optimized, and business-driven websites.">
+
+<style>
+:root {
+    --primary: #2563eb;
+    --secondary: #06b6d4;
+    --dark: #0f172a;
+    --text: #475569;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-light);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* GLOBAL */
+section {
+    padding: 90px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 60px;
+    font-size: 16px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 14px 34px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 40px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* PROJECT GRID */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* PROJECT CARD */
+.project-card {
+    background: var(--white);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-content h3 {
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.project-content p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.project-tags {
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #1e3a8a;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.project-content a {
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    padding: 30px 10%;
+    background: var(--white);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+header a {
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    color: var(--white);
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    section {
+        padding: 70px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="index.html">← Back to Home</a>
+</header>
+
+<!-- PROJECTS -->
+<section>
+    <h1 class="section-title">All Projects</h1>
+    <p class="section-subtitle">
+        A curated collection of WordPress projects focused on performance,
+        SEO, scalability, and real business results.
+    </p>
+
+    <div class="projects">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <img src="personaldrivers.png" alt="Personal Drivers" loading="lazy">
+            <div class="project-content">
+                <h3>Personal Drivers</h3>
+                <div class="project-tags">
+                    <span class="tag">WordPress</span>
+                    <span class="tag">Service Website</span>
+                    <span class="tag">High Conversion</span>
+                </div>
+                <p>Nationwide personal driver service website with booking flow.</p>
+                <a href="https://www.personaldrivers.com/" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <img src="bestbiztech.png" alt="Best Biz Tech" loading="lazy">
+            <div class="project-content">
+                <h3>Best Biz Tech</h3>
+                <div class="project-tags">
+                    <span class="tag">Corporate</span>
+                    <span class="tag">WordPress</span>
+                </div>
+                <p>Corporate website with custom WordPress development.</p>
+                <a href="https://www.bestbiztech.com/" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+            <img src="leafguttersolution.png" alt="Leaf Gutter Solution" loading="lazy">
+            <div class="project-content">
+                <h3>Leaf Gutter Solution</h3>
+                <div class="project-tags">
+                    <span class="tag">SEO</span>
+                    <span class="tag">Business</span>
+                </div>
+                <p>SEO-optimized business website with responsive layout.</p>
+                <a href="https://leafguttersolution.com" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card">
+            <img src="plussreno.png" alt="Pluss Reno" loading="lazy">
+            <div class="project-content">
+                <h3>Pluss Reno</h3>
+                <div class="project-tags">
+                    <span class="tag">Custom WordPress</span>
+                </div>
+                <p>Client-specific custom WordPress functionality.</p>
+                <a href="https://plussreno.com" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-card">
+            <img src="eastec.png" alt="Eastec" loading="lazy">
+            <div class="project-content">
+                <h3>Eastec</h3>
+                <div class="project-tags">
+                    <span class="tag">Corporate</span>
+                    <span class="tag">UI Design</span>
+                </div>
+                <p>Modern corporate website with clean UI.</p>
+                <a href="https://eastec.com.pk" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="project-card">
+            <img src="stimovers.png" alt="Stimovers" loading="lazy">
+            <div class="project-content">
+                <h3>Stimovers</h3>
+                <div class="project-tags">
+                    <span class="tag">WordPress</span>
+                    <span class="tag">Optimization</span>
+                </div>
+                <p>Custom WordPress website with performance optimization.</p>
+                <a href="https://stimovers.com" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 7 -->
+        <div class="project-card">
+            <img src="ratemymcafunder.png" alt="Rate My Cafunder" loading="lazy">
+            <div class="project-content">
+                <h3>Rate My Cafunder</h3>
+                <div class="project-tags">
+                    <span class="tag">Interactive</span>
+                    <span class="tag">Plugin Customization</span>
+                </div>
+                <p>Interactive platform with custom plugin features.</p>
+                <a href="https://ratemymcafunder.com" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 8 -->
+        <div class="project-card">
+            <img src="trgdesk.png" alt="TRG Desk" loading="lazy">
+            <div class="project-content">
+                <h3>TRG Desk</h3>
+                <div class="project-tags">
+                    <span class="tag">Corporate</span>
+                    <span class="tag">Integrations</span>
+                </div>
+                <p>Corporate website with plugin integrations.</p>
+                <a href="https://trgdesk.com/" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 9 -->
+        <div class="project-card">
+            <img src="littlebell.png" alt="Little Bell Cleaning Company" loading="lazy">
+            <div class="project-content">
+                <h3>Little Bell Cleaning Company</h3>
+                <div class="project-tags">
+                    <span class="tag">Business</span>
+                    <span class="tag">SEO</span>
+                </div>
+                <p>Modern cleaning service website with SEO.</p>
+                <a href="https://littlebellcleaningcompany.com/" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 10 -->
+        <div class="project-card">
+            <img src="tammar.png" alt="Tammar" loading="lazy">
+            <div class="project-content">
+                <h3>Tammar</h3>
+                <div class="project-tags">
+                    <span class="tag">Professional</span>
+                    <span class="tag">WordPress</span>
+                </div>
+                <p>Professional WordPress website for business client.</p>
+                <a href="https://tammar.ae" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 11 -->
+        <div class="project-card">
+            <img src="doctorhelp.png" alt="Doctor Help" loading="lazy">
+            <div class="project-content">
+                <h3>Doctor Help</h3>
+                <div class="project-tags">
+                    <span class="tag">Medical</span>
+                    <span class="tag">SEO</span>
+                </div>
+                <p>Medical service website with optimized UX.</p>
+                <a href="https://www.doctorhelp.com.au" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 12 -->
+        <div class="project-card">
+            <img src="professionaldrivers.png" alt="Professional Drivers" loading="lazy">
+            <div class="project-content">
+                <h3>Professional Drivers</h3>
+                <div class="project-tags">
+                    <span class="tag">Service</span>
+                    <span class="tag">Booking</span>
+                </div>
+                <p>Fast-loading WordPress website with booking system.</p>
+                <a href="https://www.professionaldrivers.com/" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+        <!-- PROJECT 13 -->
+        <div class="project-card">
+            <img src="delawallabiz.png" alt="Delawalla Biz" loading="lazy">
+            <div class="project-content">
+                <h3>Delawalla Biz</h3>
+                <div class="project-tags">
+                    <span class="tag">Custom WordPress</span>
+                    <span class="tag">Responsive</span>
+                </div>
+                <p>Custom WordPress website with responsive layout.</p>
+                <a href="https://www.delawallabiz.com/" target="_blank">View Live →</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Umal Baneen | WordPress Developer
+</footer>
+
+</body>
+</html>
