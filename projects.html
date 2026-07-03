@@ -3,434 +3,381 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects | Umal Baneen</title>
+<title>Projects — Umal Baneen | Full-Stack WordPress Developer</title>
 
-<!-- GOOGLE FONT -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Live WordPress projects by Umal Baneen — service websites, corporate sites, booking systems, and SEO-optimized business sites across the US, UK, Australia, UAE and Pakistan.">
+<link rel="canonical" href="https://umalbaneen023.github.io/umalbaneen.github.io/projects.html">
 
-<meta name="description" content="Portfolio projects by Umal Baneen – WordPress Developer specializing in high-performance, SEO-optimized, and business-driven websites.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projects — Umal Baneen">
+<meta property="og:description" content="Live WordPress projects: booking systems, corporate sites, and SEO-optimized business websites.">
+<meta property="og:url" content="https://umalbaneen023.github.io/umalbaneen.github.io/projects.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Projects — Umal Baneen",
+  "description": "Portfolio of live WordPress projects by Umal Baneen, full-stack WordPress developer.",
+  "url": "https://umalbaneen023.github.io/umalbaneen.github.io/projects.html",
+  "author": { "@type": "Person", "name": "Umal Baneen", "jobTitle": "Full-Stack WordPress Developer" }
+}
+</script>
 
 <style>
 :root {
-    --primary: #2563eb;
-    --secondary: #06b6d4;
-    --dark: #0f172a;
-    --text: #475569;
-    --bg-light: #f8fafc;
-    --white: #ffffff;
+    --ink: #0e1726;
+    --body: #48566b;
+    --muted: #7b8798;
+    --bg: #f6f8fb;
+    --surface: #ffffff;
+    --line: #e4e9f1;
+    --accent: #3858e9;
+    --accent-dark: #2a43c4;
+    --accent-soft: #eef1fe;
+    --green: #0cce6b;
+    --dark: #0b1626;
+    --radius: 14px;
+    --shadow: 0 1px 2px rgba(14,23,38,.04), 0 12px 32px rgba(14,23,38,.06);
+    --shadow-hover: 0 2px 4px rgba(14,23,38,.05), 0 20px 44px rgba(14,23,38,.10);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: var(--bg-light);
-    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--body);
     line-height: 1.7;
-}
-
-/* GLOBAL */
-section {
-    padding: 90px 10%;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--dark);
-    margin-bottom: 15px;
-}
-
-.section-subtitle {
-    text-align: center;
-    max-width: 720px;
-    margin: 0 auto 60px;
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* BUTTON */
-.btn {
-    display: inline-block;
-    padding: 14px 34px;
-    background: var(--primary);
-    color: var(--white);
-    border-radius: 40px;
-    font-weight: 600;
-    transition: 0.3s ease;
-    text-decoration: none;
-}
+h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; color: var(--ink); line-height: 1.2; }
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
 
-.btn:hover {
-    background: #1d4ed8;
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+.skip-link {
+    position: absolute; left: -9999px; top: 0;
+    background: var(--ink); color: #fff; padding: 10px 18px; z-index: 200;
+    border-radius: 0 0 8px 0; font-weight: 600;
 }
+.skip-link:focus { left: 0; }
+
+/* NAV */
+.nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(255,255,255,.85); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+    max-width: 1120px; margin: 0 auto; padding: 0 24px;
+    height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.brand { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px; color: var(--ink); }
+.brand span { color: var(--accent); }
+.nav-links { display: flex; gap: 26px; align-items: center; }
+.nav-links a { font-size: 14.5px; font-weight: 500; color: var(--body); transition: color .2s; }
+.nav-links a:hover { color: var(--ink); }
+.nav-cta {
+    background: var(--ink); color: #fff !important; padding: 9px 20px;
+    border-radius: 999px; font-weight: 600; transition: background .2s;
+}
+.nav-cta:hover { background: var(--accent); }
+
+/* PAGE HEADER */
+.page-head { padding: 160px 0 60px; }
+.eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--accent); font-weight: 500; margin-bottom: 14px;
+}
+.page-head h1 { font-size: clamp(30px, 4.5vw, 44px); letter-spacing: -0.02em; margin-bottom: 16px; }
+.page-head p { max-width: 640px; font-size: 17px; }
 
 /* PROJECT GRID */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
+.projects-section { padding: 20px 0 96px; }
+.projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
 
-/* =========================
-   RESPONSIVE BREAKPOINTS
-========================= */
-
-/* Tablets (≤ 1024px) */
-@media (max-width: 1024px) {
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .section-title {
-        font-size: 32px;
-    }
-
-    section {
-        padding: 80px 8%;
-    }
-}
-
-/* Mobile (≤ 768px) */
-@media (max-width: 768px) {
-    .projects {
-        grid-template-columns: 1fr;
-    }
-
-    header {
-        padding: 20px 6%;
-    }
-
-    section {
-        padding: 60px 6%;
-    }
-
-    .section-title {
-        font-size: 28px;
-    }
-
-    .section-subtitle {
-        font-size: 15px;
-        margin-bottom: 40px;
-    }
-
-    .project-content {
-        padding: 20px;
-    }
-
-    .project-content h3 {
-        font-size: 18px;
-    }
-
-    .project-content p {
-        font-size: 14px;
-    }
-}
-
-/* Small phones (≤ 480px) */
-@media (max-width: 480px) {
-    .section-title {
-        font-size: 24px;
-    }
-
-    .btn {
-        padding: 12px 26px;
-        font-size: 14px;
-    }
-
-    footer {
-        font-size: 13px;
-        padding: 20px;
-    }
-}
-
-/* PROJECT CARD */
 .project-card {
-    background: var(--white);
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    transition: 0.3s ease;
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+    transition: transform .25s ease, box-shadow .25s ease;
+    display: flex; flex-direction: column;
 }
-
-.project-card:hover {
-    transform: translateY(-8px);
-}
-
-.project-card img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: contain;
-    background: #f1f5f9;
-    padding: 10px;
-     max-height: 240px;
-}
-
-.project-content {
-    padding: 25px;
-}
-
-.project-content h3 {
-    color: var(--dark);
-    margin-bottom: 8px;
-}
-
-.project-content p {
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-
-.project-tags {
-    margin-bottom: 15px;
-}
-
+.project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.project-thumb { overflow: hidden; aspect-ratio: 16/10; background: #eef1f6; }
+.project-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.project-card:hover .project-thumb img { transform: scale(1.04); }
+.project-content { padding: 24px 22px; flex: 1; display: flex; flex-direction: column; }
+.project-content h3 { font-size: 18px; margin-bottom: 8px; }
+.project-content p { font-size: 14.5px; margin-bottom: 16px; }
+.project-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
 .tag {
-    display: inline-block;
-    background: #e0e7ff;
-    color: #1e3a8a;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-    margin-right: 6px;
-    margin-bottom: 6px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
+    background: var(--accent-soft); color: var(--accent-dark);
+    padding: 4px 11px; border-radius: 999px; font-weight: 500;
 }
+.project-link {
+    margin-top: auto; font-weight: 600; font-size: 14.5px; color: var(--accent);
+    display: inline-flex; align-items: center; gap: 6px; transition: gap .2s;
+}
+.project-link:hover { gap: 10px; }
 
-.project-content a {
-    font-weight: 600;
-    color: var(--primary);
-    text-decoration: none;
+/* CTA STRIP */
+.cta-strip {
+    background: var(--dark); color: #c6d2e4;
+    border-radius: 24px; margin: 0 24px 96px;
+    padding: 70px 24px; text-align: center;
+    position: relative; overflow: hidden;
 }
-
-/* HEADER */
-header {
-    padding: 30px 10%;
-    background: var(--white);
-    border-bottom: 1px solid #e5e7eb;
+.cta-strip::before {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(700px 300px at 50% -10%, rgba(56,88,233,.35), transparent 70%);
+    pointer-events: none;
 }
-
-header a {
-    font-weight: 600;
-    color: var(--primary);
-    text-decoration: none;
+.cta-strip > * { position: relative; }
+.cta-strip h2 { color: #fff; font-size: clamp(24px, 3.5vw, 34px); margin-bottom: 14px; letter-spacing: -0.02em; }
+.cta-strip p { max-width: 480px; margin: 0 auto 30px; }
+.btn {
+    display: inline-block; padding: 14px 30px; border-radius: 999px;
+    font-weight: 600; font-size: 15.5px; transition: all .25s ease;
 }
+.btn-primary { background: var(--accent); color: #fff; box-shadow: 0 8px 24px rgba(56,88,233,.28); }
+.btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); }
 
 /* FOOTER */
 footer {
-    background: #020617;
-    color: var(--white);
-    text-align: center;
-    padding: 30px;
-    font-size: 14px;
+    text-align: center; padding: 0 24px 44px; font-size: 13.5px; color: var(--muted);
+}
+footer nav { display: flex; gap: 22px; justify-content: center; margin-bottom: 14px; flex-wrap: wrap; }
+footer nav a { color: var(--body); font-weight: 500; }
+footer nav a:hover { color: var(--accent); }
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .reveal { opacity: 1; transform: none; }
 }
 
 /* RESPONSIVE */
+@media (max-width: 1024px) {
+    .projects { grid-template-columns: 1fr 1fr; }
+}
 @media (max-width: 768px) {
-    section {
-        padding: 70px 6%;
-    }
+    .nav-links a:not(.nav-cta) { display: none; }
+    .page-head { padding: 130px 0 44px; }
+    .projects { grid-template-columns: 1fr; }
+    .cta-strip { margin: 0 14px 72px; }
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-    <a href="index.html">← Back to Home</a>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+        <a href="index.html" class="brand">umal<span>.</span>baneen</a>
+        <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#plugins">Plugins</a>
+            <a href="index.html#expertise">SEO &amp; Speed</a>
+            <a href="index.html#contact" class="nav-cta">Hire Me</a>
+        </div>
+    </div>
+</nav>
+
+<main id="main">
+
+<header class="page-head">
+    <div class="wrap">
+        <p class="eyebrow">// all projects</p>
+        <h1>Live work, real businesses.</h1>
+        <p>
+            Every project here is in production — service websites, booking systems,
+            corporate sites, and SEO-driven business sites built for clients across the
+            US, UK, Australia, UAE, and Pakistan.
+        </p>
+    </div>
 </header>
 
-<!-- PROJECTS -->
-<section>
-    <h1 class="section-title">All Projects</h1>
-    <p class="section-subtitle">
-        A curated collection of WordPress projects focused on performance,
-        SEO, scalability, and real business results.
-    </p>
+<section class="projects-section">
+    <div class="wrap">
+        <div class="projects">
 
-    <div class="projects">
-
-        <!-- PROJECT 1 -->
-        <div class="project-card">
-            <img src="personaldrivers.png" alt="Personal Drivers" loading="lazy">
-            <div class="project-content">
-                <h3>Personal Drivers</h3>
-                <div class="project-tags">
-                    <span class="tag">WordPress</span>
-                    <span class="tag">Service Website</span>
-                    <span class="tag">High Conversion</span>
+            <article class="project-card reveal">
+                <div class="project-thumb"><img src="personaldrivers.png" alt="Personal Drivers website screenshot" loading="lazy" width="640" height="400"></div>
+                <div class="project-content">
+                    <h3>Personal Drivers</h3>
+                    <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Booking Flow</span><span class="tag">High Conversion</span></div>
+                    <p>Nationwide personal driver service with a conversion-focused booking flow.</p>
+                    <a class="project-link" href="https://www.personaldrivers.com/" target="_blank" rel="noopener">View live <span aria-hidden="true">→</span></a>
                 </div>
-                <p>Nationwide personal driver service website with booking flow.</p>
-                <a href="https://www.personaldrivers.com/" target="_blank">View Live →</a>
-            </div>
-        </div>
+            </article>
 
-        <!-- PROJECT 2 -->
-        <div class="project-card">
-            <img src="bestbiztech.png" alt="Best Biz Tech" loading="lazy">
-            <div class="project-content">
-                <h3>Best Biz Tech</h3>
-                <div class="project-tags">
-                    <span class="tag">Corporate</span>
-                    <span class="tag">WordPress</span>
+            <article class="project-card reveal">
+                <div class="project-thumb"><img src="professionaldrivers.png" alt="Professional Drivers website screenshot" loading="lazy" width="640" height="400"></div>
+                <div class="project-content">
+                    <h3>Professional Drivers</h3>
+                    <div class="project-tags"><span class="tag">Booking System</span><span class="tag">Performance</span></div>
+                    <p>Fast-loading service website with an integrated booking system.</p>
+                    <a class="project-link" href="https://www.professionaldrivers.com/" target="_blank" rel="noopener">View live <span aria-hidden="true">→</span></a>
                 </div>
-                <p>Corporate website with custom WordPress development.</p>
-                <a href="https://www.bestbiztech.com/" target="_blank">View Live →</a>
-            </div>
-        </div>
+            </article>
 
-        <!-- PROJECT 3 -->
-        <div class="project-card">
-            <img src="leafguttersolution.png" alt="Leaf Gutter Solution" loading="lazy">
-            <div class="project-content">
-                <h3>Leaf Gutter Solution</h3>
-                <div class="project-tags">
-                    <span class="tag">SEO</span>
-                    <span class="tag">Business</span>
+            <article class="project-card reveal">
+                <div class="project-thumb"><img src="bestbiztech.png" alt="Best Biz Tech website screenshot" loading="lazy" width="640" height="400"></div>
+                <div class="project-content">
+                    <h3>Best Biz Tech</h3>
+                    <div class="project-tags"><span class="tag">Corporate</span><span class="tag">Custom Theme</span></div>
+                    <p>Corporate website with custom WordPress development and modern UI.</p>
+                    <a class="project-link" href="https://www.bestbiztech.com/" target="_blank" rel="noopener">View live <span aria-hidden="true">→</span></a>
                 </div>
-                <p>SEO-optimized business website with responsive layout.</p>
-                <a href="https://leafguttersolution.com" target="_blank">View Live →</a>
-            </div>
-        </div>
+            </article>
 
-        <!-- PROJECT 4 -->
-        <div class="project-card">
-            <img src="plussreno.png" alt="Pluss Reno" loading="lazy">
-            <div class="project-content">
-                <h3>Pluss Reno</h3>
-                <div class="project-tags">
-                    <span class="tag">Custom WordPress</span>
+            <article class="project-card reveal">
+                <div class="project-thumb"><img src="leafguttersolution.png" alt="Leaf Gutter Solution website screenshot" loading="lazy" width="640" height="400"></div>
+                <div class="project-content">
+                    <h3>Leaf Gutter Solution</h3>
+                    <div class="project-tags"><span class="tag">SEO</span><span class="tag">Local Business</span></div>
+                    <p>SEO-optimized business website built to win local search traffic.</p>
+                    <a class="project-link" href="https://leafguttersolution.com" target="_blank" rel="noopener">View live <span aria-hidden="true">→</span></a>
                 </div>
-                <p>Client-specific custom WordPress functionality.</p>
-                <a href="https://plussreno.com" target="_blank">View Live →</a>
-            </div>
-        </div>
+            </article>
 
-        <!-- PROJECT 5 -->
-        <div class="project-card">
-            <img src="eastec.png" alt="Eastec" loading="lazy">
-            <div class="project-content">
-                <h3>Eastec</h3>
-                <div class="project-tags">
-                    <span class="tag">Corporate</span>
-                    <span class="tag">UI Design</span>
+            <article class="project-card reveal">
+                <div class="project-thumb"><img src="plussreno.png" alt="Pluss Reno website screenshot" loading="lazy" width="640" height="400"></div>
+                <div class="project-content">
+                    <h3>Pluss Reno</h3>
+                    <div class="project-tags"><span class="tag">Custom WordPress</span></div>
+                    <p>Renovation company site with client-specific custom functionality.</p>
+                    <a class="project-link" href="https://plussreno.com" target="_blank" rel="noopener">View live <span aria-hidden="true">→</span></a>
                 </div>
-                <p>Modern corporate website with clean UI.</p>
-                <a href="https://eastec.com.pk" target="_blank">View Live →</a>
-            </div>
-        </div>
+            </article>
 
-        <!-- PROJECT 6 -->
-        <div class="project-card">
-            <img src="stimovers.png" alt="Stimovers" loading="lazy">
-            <div class="project-content">
-                <h3>Stimovers</h3>
-                <div class="project-tags">
-                    <span class="tag">WordPress</span>
-                    <span class="tag">Optimization</span>
+            <article class="project-card reveal">
+                <div class="project-thumb"><img src="eastec.png" alt="Eastec website screenshot" loading="lazy" width="640" height="400"></div>
+                <div class="project-content">
+                    <h3>Eastec</h3>
+                    <div class="project-tags"><span class="tag">Corporate</span><span class="tag">UI Design</span></div>
+                    <p>Modern corporate website with a clean, professional interface.</p>
+                    <a class="project-link" href="https://eastec.com.pk" target="_blank" rel="noopener">View live <span aria-hidden="true">→</span></a>
                 </div>
-                <p>Custom WordPress website with performance optimization.</p>
-                <a href="https://stimovers.com" target="_blank">View Live →</a>
-            </div>
-        </div>
+            </article>
 
-        <!-- PROJECT 7 -->
-        <div class="project-card">
-            <img src="ratemymcafunder.png" alt="Rate My Cafunder" loading="lazy">
-            <div class="project-content">
-                <h3>Rate My Cafunder</h3>
-                <div class="project-tags">
-                    <span class="tag">Interactive</span>
-                    <span class="tag">Plugin Customization</span>
+            <article class="project-card reveal">
+                <div class="project-thumb"><img src="stimovers.png" alt="Stimovers website screenshot" loading="lazy" width="640" height="400"></div>
+                <div class="project-content">
+                    <h3>Stimovers</h3>
+                    <div class="project-tags"><span class="tag">WordPress</span><span class="tag">Speed Optimization</span></div>
+                    <p>Moving company website with hands-on performance optimization.</p>
+                    <a class="project-link" href="https://stimovers.com" target="_blank" rel="noopener">View live <span aria-hidden="true">→</span></a>
                 </div>
-                <p>Interactive platform with custom plugin features.</p>
-                <a href="https://ratemymcafunder.com" target="_blank">View Live →</a>
-            </div>
-        </div>
-        <!-- PROJECT 9 -->
-        <div class="project-card">
-            <img src="littlebell.png" alt="Little Bell Cleaning Company" loading="lazy">
-            <div class="project-content">
-                <h3>Little Bell Cleaning Company</h3>
-                <div class="project-tags">
-                    <span class="tag">Business</span>
-                    <span class="tag">SEO</span>
-                </div>
-                <p>Modern cleaning service website with SEO.</p>
-                <a href="https://littlebellcleaningcompany.com/" target="_blank">View Live →</a>
-            </div>
-        </div>
+            </article>
 
-        <!-- PROJECT 10 -->
-        <div class="project-card">
-            <img src="tammar.png" alt="Tammar" loading="lazy">
-            <div class="project-content">
-                <h3>Tammar</h3>
-                <div class="project-tags">
-                    <span class="tag">Professional</span>
-                    <span class="tag">WordPress</span>
+            <article class="project-card reveal">
+                <div class="project-thumb"><img src="ratemymcafunder.png" alt="Rate My MCA Funder website screenshot" loading="lazy" width="640" height="400"></div>
+                <div class="project-content">
+                    <h3>Rate My MCA Funder</h3>
+                    <div class="project-tags"><span class="tag">Interactive</span><span class="tag">Plugin Customization</span></div>
+                    <p>Interactive rating platform with custom plugin features.</p>
+                    <a class="project-link" href="https://ratemymcafunder.com" target="_blank" rel="noopener">View live <span aria-hidden="true">→</span></a>
                 </div>
-                <p>Professional WordPress website for business client.</p>
-                <a href="https://tammar.ae" target="_blank">View Live →</a>
-            </div>
-        </div>
+            </article>
 
-        <!-- PROJECT 11 -->
-        <div class="project-card">
-            <img src="doctorhelp.png" alt="Doctor Help" loading="lazy">
-            <div class="project-content">
-                <h3>Doctor Help</h3>
-                <div class="project-tags">
-                    <span class="tag">Medical</span>
-                    <span class="tag">SEO</span>
+            <article class="project-card reveal">
+                <div class="project-thumb"><img src="littlebell.png" alt="Little Bell Cleaning Company website screenshot" loading="lazy" width="640" height="400"></div>
+                <div class="project-content">
+                    <h3>Little Bell Cleaning Company</h3>
+                    <div class="project-tags"><span class="tag">Business</span><span class="tag">SEO</span></div>
+                    <p>Modern cleaning service website with SEO foundations built in.</p>
+                    <a class="project-link" href="https://littlebellcleaningcompany.com/" target="_blank" rel="noopener">View live <span aria-hidden="true">→</span></a>
                 </div>
-                <p>Medical service website with optimized UX.</p>
-                <a href="https://www.doctorhelp.com.au" target="_blank">View Live →</a>
-            </div>
-        </div>
+            </article>
 
-        <!-- PROJECT 12 -->
-        <div class="project-card">
-            <img src="professionaldrivers.png" alt="Professional Drivers" loading="lazy">
-            <div class="project-content">
-                <h3>Professional Drivers</h3>
-                <div class="project-tags">
-                    <span class="tag">Service</span>
-                    <span class="tag">Booking</span>
+            <article class="project-card reveal">
+                <div class="project-thumb"><img src="tammar.png" alt="Tammar website screenshot" loading="lazy" width="640" height="400"></div>
+                <div class="project-content">
+                    <h3>Tammar</h3>
+                    <div class="project-tags"><span class="tag">Professional</span><span class="tag">WordPress</span></div>
+                    <p>Professional WordPress website for a UAE business client.</p>
+                    <a class="project-link" href="https://tammar.ae" target="_blank" rel="noopener">View live <span aria-hidden="true">→</span></a>
                 </div>
-                <p>Fast-loading WordPress website with booking system.</p>
-                <a href="https://www.professionaldrivers.com/" target="_blank">View Live →</a>
-            </div>
-        </div>
+            </article>
 
-        <!-- PROJECT 13 -->
-        <div class="project-card">
-            <img src="delawallabiz.png" alt="Delawalla Biz" loading="lazy">
-            <div class="project-content">
-                <h3>Delawalla Biz</h3>
-                <div class="project-tags">
-                    <span class="tag">Custom WordPress</span>
-                    <span class="tag">Responsive</span>
+            <article class="project-card reveal">
+                <div class="project-thumb"><img src="doctorhelp.png" alt="Doctor Help website screenshot" loading="lazy" width="640" height="400"></div>
+                <div class="project-content">
+                    <h3>Doctor Help</h3>
+                    <div class="project-tags"><span class="tag">Medical</span><span class="tag">SEO</span><span class="tag">UX</span></div>
+                    <p>Australian medical service website with optimized user experience.</p>
+                    <a class="project-link" href="https://www.doctorhelp.com.au" target="_blank" rel="noopener">View live <span aria-hidden="true">→</span></a>
                 </div>
-                <p>Custom WordPress website with responsive layout.</p>
-                <a href="https://www.delawallabiz.com/" target="_blank">View Live →</a>
-            </div>
-        </div>
+            </article>
 
+            <article class="project-card reveal">
+                <div class="project-thumb"><img src="delawallabiz.png" alt="Delawalla Biz website screenshot" loading="lazy" width="640" height="400"></div>
+                <div class="project-content">
+                    <h3>Delawalla Biz</h3>
+                    <div class="project-tags"><span class="tag">Custom WordPress</span><span class="tag">Responsive</span></div>
+                    <p>Custom WordPress website with a fully responsive layout.</p>
+                    <a class="project-link" href="https://www.delawallabiz.com/" target="_blank" rel="noopener">View live <span aria-hidden="true">→</span></a>
+                </div>
+            </article>
+
+        </div>
     </div>
 </section>
 
+<section class="cta-strip">
+    <h2>Have a project like these?</h2>
+    <p>Let's talk about what a fast, well-built WordPress site could do for your business.</p>
+    <a href="mailto:umalbaneen023@gmail.com" class="btn btn-primary">Email Me</a>
+</section>
+
+</main>
+
 <footer>
-    © 2026 Umal Baneen | WordPress Developer
+    <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#plugins">Plugins</a>
+        <a href="index.html#expertise">SEO &amp; Speed</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+    © 2026 Umal Baneen — Full-Stack WordPress Developer
 </footer>
+
+<script>
+(function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('in'); });
+        return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { io.observe(el); });
+})();
+</script>
 
 </body>
 </html>
