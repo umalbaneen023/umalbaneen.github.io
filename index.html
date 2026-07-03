@@ -6,14 +6,17 @@
 <title>Umal Baneen — Full-Stack WordPress Developer | Plugins, Performance & Technical SEO</title>
 
 <meta name="description" content="Umal Baneen is a full-stack WordPress developer with 5+ years of experience building custom plugins, CRM integrations, and high-performance websites that score 95+ on PageSpeed.">
-<link rel="canonical" href="https://umalbaneen023.github.io/umalbaneen.github.io/">
+<link rel="canonical" href="https://umalbaneen023.github.io/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Umal Baneen — Full-Stack WordPress Developer">
 <meta property="og:description" content="Custom plugins, CRM integrations, Core Web Vitals optimization and technical SEO. 30+ projects delivered.">
-<meta property="og:url" content="https://umalbaneen023.github.io/umalbaneen.github.io/">
-<meta property="og:image" content="https://umalbaneen023.github.io/umalbaneen.github.io/1754655252037.jpeg">
+<meta property="og:url" content="https://umalbaneen023.github.io/">
+<meta property="og:image" content="https://umalbaneen023.github.io/og-image.png">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary">
@@ -33,10 +36,10 @@
   "name": "Umal Baneen",
   "jobTitle": "Full-Stack WordPress Developer",
   "description": "WordPress developer specializing in custom plugin development, CRM integrations, Core Web Vitals optimization, and technical SEO.",
-  "url": "https://umalbaneen023.github.io/umalbaneen.github.io/",
+  "url": "https://umalbaneen023.github.io/",
   "email": "mailto:umalbaneen023@gmail.com",
-  "image": "https://umalbaneen023.github.io/umalbaneen.github.io/1754655252037.jpeg",
-  "sameAs": ["https://www.linkedin.com/in/umal-baneen-89774a378/"],
+  "image": "https://umalbaneen023.github.io/1754655252037.jpeg",
+  "sameAs": ["https://www.linkedin.com/in/umal-baneen-89774a378/", "https://github.com/umalbaneen023"],
   "knowsAbout": ["WordPress", "PHP", "JavaScript", "Node.js", "WooCommerce", "Technical SEO", "Core Web Vitals", "REST API", "HubSpot", "Zoho CRM"]
 }
 </script>
@@ -359,6 +362,95 @@ footer nav { display: flex; gap: 22px; justify-content: center; margin-bottom: 1
 footer nav a { color: var(--body); font-weight: 500; }
 footer nav a:hover { color: var(--accent); }
 
+
+/* ---------- About portrait ---------- */
+.portrait-wrap { display: flex; align-items: center; gap: 18px; margin-bottom: 26px; }
+.portrait {
+    width: 84px; height: 84px; border-radius: 50%; object-fit: cover;
+    border: 3px solid var(--surface); box-shadow: 0 0 0 2px var(--accent), var(--shadow);
+}
+.portrait-id strong { display: block; font-family: 'Space Grotesk', sans-serif; font-size: 18px; color: var(--ink); }
+.portrait-id span { font-size: 13.5px; color: var(--muted); }
+
+/* ---------- Case study ---------- */
+.case-card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 18px; box-shadow: var(--shadow); overflow: hidden;
+}
+.case-head {
+    padding: 30px 34px 24px; border-bottom: 1px solid var(--line);
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap;
+}
+.case-head h3 { font-size: 22px; margin-bottom: 6px; }
+.case-head p { font-size: 14.5px; max-width: 560px; }
+.case-domain {
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+    background: var(--accent-soft); color: var(--accent-dark);
+    padding: 6px 14px; border-radius: 999px; white-space: nowrap;
+}
+.case-body { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+.case-metric { padding: 28px 34px; border-right: 1px solid var(--line); }
+.case-metric:last-child { border-right: none; }
+.case-metric .label { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+.case-metric .delta {
+    font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700;
+    color: var(--ink); display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+}
+.case-metric .delta .from { color: #d9534f; text-decoration: line-through; text-decoration-thickness: 2px; font-size: 20px; }
+.case-metric .delta .arrow { color: var(--muted); font-size: 16px; }
+.case-metric .delta .to { color: #067a41; }
+.case-metric .note { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+.case-foot {
+    padding: 20px 34px; border-top: 1px solid var(--line); background: #fbfcfe;
+    font-size: 14px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+}
+.case-foot .mono { font-size: 12.5px; color: var(--muted); }
+
+/* ---------- Testimonials ---------- */
+.testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.testimonial {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 30px 26px; box-shadow: var(--shadow);
+    display: flex; flex-direction: column;
+}
+.testimonial .quote-mark {
+    font-family: 'Space Grotesk', sans-serif; font-size: 44px; line-height: 1;
+    color: var(--accent); margin-bottom: 12px;
+}
+.testimonial blockquote { font-size: 15px; color: var(--body); flex: 1; margin-bottom: 20px; }
+.testimonial cite { font-style: normal; }
+.testimonial cite strong { display: block; font-size: 14.5px; color: var(--ink); font-weight: 600; }
+.testimonial cite span { font-size: 13px; color: var(--muted); }
+
+/* ---------- Contact form ---------- */
+.contact-form {
+    max-width: 560px; margin: 0 auto 30px; text-align: left;
+    display: grid; gap: 14px;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.contact-form label { display: block; font-size: 13px; font-weight: 600; color: #aebdd6; margin-bottom: 6px; }
+.contact-form input, .contact-form textarea {
+    width: 100%; padding: 13px 16px; border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.06);
+    color: #fff; font-family: 'Inter', sans-serif; font-size: 15px;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: #6f8099; }
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: 3px solid var(--accent); outline-offset: 1px; border-color: transparent;
+}
+.contact-form textarea { min-height: 120px; resize: vertical; }
+.contact-form button {
+    font-family: 'Inter', sans-serif; cursor: pointer; border: none;
+    justify-self: start;
+}
+.contact-divider {
+    display: flex; align-items: center; gap: 14px; max-width: 560px;
+    margin: 0 auto 26px; color: #6f8099; font-size: 13px;
+}
+.contact-divider::before, .contact-divider::after {
+    content: ""; flex: 1; height: 1px; background: rgba(255,255,255,.14);
+}
+
 /* ---------- Reveal on scroll ---------- */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.in { opacity: 1; transform: none; }
@@ -380,6 +472,11 @@ footer nav a:hover { color: var(--accent); }
 
 @media (max-width: 768px) {
     .nav-links a:not(.nav-cta) { display: none; }
+    .case-body { grid-template-columns: 1fr; }
+    .case-metric { border-right: none; border-bottom: 1px solid var(--line); }
+    .case-metric:last-child { border-bottom: none; }
+    .testimonial-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
     .hero { padding: 130px 0 70px; }
     section { padding: 64px 0; }
     .about-grid, .expertise-grid, .plugin-grid { grid-template-columns: 1fr; }
@@ -414,6 +511,7 @@ footer nav a:hover { color: var(--accent); }
             <a href="#tools">Tools</a>
             <a href="#expertise">SEO &amp; Speed</a>
             <a href="#projects">Projects</a>
+            <a href="https://github.com/umalbaneen023" target="_blank" rel="noopener">GitHub</a>
             <a href="#contact" class="nav-cta">Hire Me</a>
         </div>
     </div>
@@ -484,6 +582,13 @@ footer nav a:hover { color: var(--accent); }
         <h2 class="section-title">Engineer first, WordPress specialist second.</h2>
         <div class="about-grid">
             <div class="about-text reveal">
+                <div class="portrait-wrap">
+                    <img src="1754655252037.jpeg" alt="Portrait of Umal Baneen" class="portrait" width="84" height="84" loading="lazy">
+                    <div class="portrait-id">
+                        <strong>Umal Baneen</strong>
+                        <span>Full-Stack WordPress Developer · Lahore, PK (remote worldwide)</span>
+                    </div>
+                </div>
                 <p>
                     I'm <strong>Umal Baneen</strong>, a software engineer and full-stack WordPress
                     developer with <strong>5+ years of experience</strong>. I go beyond themes and page builders — I write <strong>custom plugins in PHP</strong>,
@@ -666,6 +771,56 @@ footer nav a:hover { color: var(--accent); }
     </div>
 </section>
 
+
+<!-- CASE STUDY -->
+<!-- ⚠️ PLACEHOLDER NUMBERS: replace the before/after values below with your real
+     PageSpeed Insights results before publishing. -->
+<section id="case-study">
+    <div class="wrap">
+        <p class="eyebrow">// case study</p>
+        <h2 class="section-title">Before &amp; after: a real optimization project</h2>
+        <p class="section-lead">
+            What "speed optimization" actually means when I do it — measured with
+            PageSpeed Insights before and after.
+        </p>
+
+        <div class="case-card reveal">
+            <div class="case-head">
+                <div>
+                    <h3>Personal Drivers — performance overhaul</h3>
+                    <p>
+                        Cloudflare CDN setup, critical CSS for above-the-fold content, manual image
+                        optimization (WebP), script deferral, and caching configuration — no redesign,
+                        same site, rebuilt under the hood.
+                    </p>
+                </div>
+                <span class="case-domain">personaldrivers.com</span>
+            </div>
+            <div class="case-body">
+                <div class="case-metric">
+                    <div class="label">PageSpeed score (mobile)</div>
+                    <div class="delta"><span class="from">46</span><span class="arrow">→</span><span class="to">98</span></div>
+                    <div class="note">Lighthouse performance</div>
+                </div>
+                <div class="case-metric">
+                    <div class="label">Largest Contentful Paint</div>
+                    <div class="delta"><span class="from">4.6s</span><span class="arrow">→</span><span class="to">1.2s</span></div>
+                    <div class="note">Core Web Vitals — passing</div>
+                </div>
+                <div class="case-metric">
+                    <div class="label">Total Blocking Time</div>
+                    <div class="delta"><span class="from">890ms</span><span class="arrow">→</span><span class="to">40ms</span></div>
+                    <div class="note">Script deferral &amp; request reduction</div>
+                </div>
+            </div>
+            <div class="case-foot">
+                <span>Every number here is verifiable — run the site through PageSpeed Insights yourself.</span>
+                <span class="mono">tools: Cloudflare · WP Rocket · Screaming Frog</span>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- PROJECTS -->
 <section id="projects">
     <div class="wrap">
@@ -711,14 +866,71 @@ footer nav a:hover { color: var(--accent); }
     </div>
 </section>
 
+
+<!-- TESTIMONIALS -->
+<!-- ⚠️ PLACEHOLDER QUOTES: replace with real client quotes, names, and companies.
+     Remove any card you don't have a real quote for. -->
+<section id="testimonials" class="alt-section">
+    <div class="wrap">
+        <p class="eyebrow">// testimonials</p>
+        <h2 class="section-title">What clients say</h2>
+
+        <div class="testimonial-grid">
+            <article class="testimonial reveal">
+                <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+                <blockquote>[Replace with real quote — e.g. "Umal took our PageSpeed score from failing to 95+ and our leads now flow straight into HubSpot. Exactly what we needed."]</blockquote>
+                <cite><strong>[Client Name]</strong><span>[Role], [Company]</span></cite>
+            </article>
+
+            <article class="testimonial reveal">
+                <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+                <blockquote>[Replace with real quote about your plugin/integration work.]</blockquote>
+                <cite><strong>[Client Name]</strong><span>[Role], [Company]</span></cite>
+            </article>
+
+            <article class="testimonial reveal">
+                <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+                <blockquote>[Replace with real quote about SEO results or working with you.]</blockquote>
+                <cite><strong>[Client Name]</strong><span>[Role], [Company]</span></cite>
+            </article>
+        </div>
+    </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact" class="contact">
     <p class="eyebrow">// contact</p>
     <h2>Let's build something that performs.</h2>
     <p>Available for freelance projects, agency partnerships, and remote full-time roles. I usually reply within 24 hours.</p>
+
+    <!-- ⚠️ SETUP REQUIRED: create a free form at https://formspree.io, then replace
+         YOUR_FORM_ID below with the ID Formspree gives you (looks like: xwkgqjvb). -->
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-row">
+            <div>
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div>
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" name="email" placeholder="you@company.com" required autocomplete="email">
+            </div>
+        </div>
+        <div>
+            <label for="cf-message">Project details</label>
+            <textarea id="cf-message" name="message" placeholder="What are you building? What's the timeline?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+    <div class="contact-divider">or reach me directly</div>
+
     <div class="contact-actions">
-        <a href="mailto:umalbaneen023@gmail.com" class="btn btn-primary">Email Me</a>
-        <a href="https://www.linkedin.com/in/umal-baneen-89774a378/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn Profile</a>
+        <a href="mailto:umalbaneen023@gmail.com" class="btn btn-ghost">Email Me</a>
+        <a href="https://www.linkedin.com/in/umal-baneen-89774a378/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+        <a href="https://github.com/umalbaneen023" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        <!-- ⚠️ Upload your resume as resume.pdf to the repo root -->
+        <a href="resume.pdf" class="btn btn-ghost" download>Download Resume</a>
     </div>
     <p class="contact-email">umalbaneen023@gmail.com</p>
 </section>
@@ -731,6 +943,7 @@ footer nav a:hover { color: var(--accent); }
         <a href="#plugins">Plugins</a>
         <a href="#expertise">SEO &amp; Speed</a>
         <a href="projects.html">Projects</a>
+        <a href="https://github.com/umalbaneen023" target="_blank" rel="noopener">GitHub</a>
         <a href="#contact">Contact</a>
     </nav>
     © 2026 Umal Baneen — Full-Stack WordPress Developer
