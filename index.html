@@ -6,14 +6,14 @@
 <title>Umal Baneen — Full-Stack WordPress Developer | Plugins, Performance & Technical SEO</title>
 
 <meta name="description" content="Umal Baneen is a full-stack WordPress developer with 5+ years of experience building custom plugins, CRM integrations, and high-performance websites that score 95+ on PageSpeed.">
-<link rel="canonical" href="https://umalbaneen023.github.io/">
+<link rel="canonical" href="https://umalbaneen023.github.io/umalbaneen.github.io/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Umal Baneen — Full-Stack WordPress Developer">
 <meta property="og:description" content="Custom plugins, CRM integrations, Core Web Vitals optimization and technical SEO. 30+ projects delivered.">
-<meta property="og:url" content="https://umalbaneen023.github.io/">
-<meta property="og:image" content="https://umalbaneen023.github.io/og-image.png">
+<meta property="og:url" content="https://umalbaneen023.github.io/umalbaneen.github.io/">
+<meta property="og:image" content="https://umalbaneen023.github.io/umalbaneen.github.io/og-image.png">
 
 <!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -36,9 +36,9 @@
   "name": "Umal Baneen",
   "jobTitle": "Full-Stack WordPress Developer",
   "description": "WordPress developer specializing in custom plugin development, CRM integrations, Core Web Vitals optimization, and technical SEO.",
-  "url": "https://umalbaneen023.github.io/",
+  "url": "https://umalbaneen023.github.io/umalbaneen.github.io/",
   "email": "mailto:umalbaneen023@gmail.com",
-  "image": "https://umalbaneen023.github.io/1754655252037.jpeg",
+  "image": "https://umalbaneen023.github.io/umalbaneen.github.io/1754655252037.jpeg",
   "sameAs": ["https://www.linkedin.com/in/umal-baneen-89774a378/", "https://github.com/umalbaneen023"],
   "knowsAbout": ["WordPress", "PHP", "JavaScript", "Node.js", "WooCommerce", "Technical SEO", "Core Web Vitals", "REST API", "HubSpot", "Zoho CRM"]
 }
@@ -388,9 +388,10 @@ footer nav a:hover { color: var(--accent); }
     background: var(--accent-soft); color: var(--accent-dark);
     padding: 6px 14px; border-radius: 999px; white-space: nowrap;
 }
-.case-body { display: grid; grid-template-columns: 1fr 1fr 1fr; }
-.case-metric { padding: 28px 34px; border-right: 1px solid var(--line); }
-.case-metric:last-child { border-right: none; }
+.case-body { display: grid; grid-template-columns: repeat(2, 1fr); }
+.case-metric { padding: 28px 34px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.case-metric:nth-child(2n) { border-right: none; }
+.case-metric:nth-child(n+3) { border-bottom: none; }
 .case-metric .label { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
 .case-metric .delta {
     font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700;
@@ -473,7 +474,7 @@ footer nav a:hover { color: var(--accent); }
 @media (max-width: 768px) {
     .nav-links a:not(.nav-cta) { display: none; }
     .case-body { grid-template-columns: 1fr; }
-    .case-metric { border-right: none; border-bottom: 1px solid var(--line); }
+    .case-metric:nth-child(n) { border-right: none; border-bottom: 1px solid var(--line); }
     .case-metric:last-child { border-bottom: none; }
     .testimonial-grid { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }
@@ -567,7 +568,7 @@ footer nav a:hover { color: var(--accent); }
                     </div>
                 </div>
                 <div class="audit-foot">
-                    <span>LCP <b>1.2s</b> · CLS <b>0.01</b> · TBT <b>40ms</b></span>
+                    <span>SI <b>0.9s</b> · LCP <b>1.2s</b> · TBT <b>0ms</b></span>
                     <span>personaldrivers.com — after optimization</span>
                 </div>
             </div>
@@ -809,13 +810,13 @@ footer nav a:hover { color: var(--accent); }
                 </div>
                 <div class="case-metric">
                     <div class="label">Total Blocking Time</div>
-                    <div class="delta"><span class="from">890ms</span><span class="arrow">→</span><span class="to">00ms</span></div>
+                    <div class="delta"><span class="from">890ms</span><span class="arrow">→</span><span class="to">0ms</span></div>
                     <div class="note">Script deferral &amp; request reduction</div>
                 </div>
                 <div class="case-metric">
                     <div class="label">Speed Index</div>
                     <div class="delta"><span class="from">4.3s</span><span class="arrow">→</span><span class="to">0.9s</span></div>
-                    <div class="note">Script deferral &amp; request reduction</div>
+                    <div class="note">Above-the-fold &amp; render path optimization</div>
                 </div>
             </div>
             <div class="case-foot">
@@ -883,19 +884,19 @@ footer nav a:hover { color: var(--accent); }
         <div class="testimonial-grid">
             <article class="testimonial reveal">
                 <div class="quote-mark" aria-hidden="true">&ldquo;</div>
-                <blockquote>Our website was slow and it was costing us leads. Umal rebuilt it under the hood same design, completely different performance. We went from failing Core Web Vitals to a 95+ PageSpeed score, and he explained every change he made. Highly recommend for any serious WordPress work.</blockquote>
+                <blockquote>Our website was slow and it was costing us leads. Umal rebuilt it under the hood — same design, completely different performance. We went from failing Core Web Vitals to a 95+ PageSpeed score, and he explained every change he made. Highly recommend for any serious WordPress work.</blockquote>
                 <cite><strong>Meerub Dorani</strong></cite>
             </article>
 
             <article class="testimonial reveal">
                 <div class="quote-mark" aria-hidden="true">&ldquo;</div>
-                <blockquote>We needed our Contact Form 7 submissions flowing into HubSpot as deals automatically, and no existing plugin did it properly. Umal built a custom plugin that maps every field perfectly our sales team hasn't done manual data entry since. He delivers real engineering, not just plugin installs.</blockquote>
-                <cite><strong>Asad Ali</strong><span></cite>
+                <blockquote>We needed our Contact Form 7 submissions flowing into HubSpot as deals automatically, and no existing plugin did it properly. Umal built a custom plugin that maps every field perfectly — our sales team hasn't done manual data entry since. He delivers real engineering, not just plugin installs.</blockquote>
+                <cite><strong>Asad Ali</strong></cite>
             </article>
 
             <article class="testimonial reveal">
                 <div class="quote-mark" aria-hidden="true">&ldquo;</div>
-                <blockquote>Umal is the developer we hand our hardest technical SEO problems to. Server log analysis, Search Console errors, schema markup he fixes issues other developers couldn't even diagnose. Communicative, on time, and the results show up in our rankings.</blockquote>
+                <blockquote>Umal is the developer we hand our hardest technical SEO problems to. Server log analysis, Search Console errors, schema markup — he fixes issues other developers couldn't even diagnose. Communicative, on time, and the results show up in our rankings.</blockquote>
                 <cite><strong>Hazel Elora</strong></cite>
             </article>
         </div>
